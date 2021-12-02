@@ -1,6 +1,12 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import Home from '../views/Home/'
+import Signup from '../views/Signup/'
+import SearchPeople from '../views/Proccess/search-people'
+import SearchGender from '../views/Proccess/search-gender'
+import SoThat from '../views/Proccess/search-sothat'
+import SearchWhere from '../views/Proccess/search-where'
+import People from '../views/Proccess/people'
 
 Vue.use(VueRouter)
 
@@ -11,13 +17,37 @@ const routes = [
     component: Home
   },
   {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  }
+    path: '/signup',
+    name: 'Signup',
+    component: Signup
+  },
+  {
+    path: '/search-people',
+    name: 'SearchPeople',
+    component: SearchPeople,
+  },
+  {
+    path: '/search-people/gender',
+    name: 'SearchGender',
+    component: SearchGender,
+  },
+  {
+    path: '/search-people/gender/so-that',
+    name: 'SoThat',
+    component: SoThat,
+  },
+  {
+    path: '/search-people/gender/so-that/where',
+    name: 'SearchWhere',
+    component: SearchWhere,
+  },
+  {
+    path: '/search-people/gender/so-that/where/people',
+    name: 'People',
+    component: People,
+  },
+
+ 
 ]
 
 const router = new VueRouter({

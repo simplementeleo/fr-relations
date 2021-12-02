@@ -1,0 +1,18 @@
+.slide {
+    animation: .3s slide ease-in-out;
+}
+@keyframes slide {
+    from {
+        opacity: 0;
+        transform: translateY(-2px);
+    }
+}
+.show-slide {
+    animation: .5s showSlide ease-in-out forwards;
+}
+@keyframes showSlide {
+    to {
+        opacity: 1;
+        transform: translateY(-5px);
+    }
+}
