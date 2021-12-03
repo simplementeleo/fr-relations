@@ -4,7 +4,7 @@
            <div class="absolute-full z-20 flex items-center justify-center">
                <router-link :to="{ name: 'People' }">
                    <button class="btn-red uppercase opacity-0 show-slide">
-                       next
+                       next 
                    </button>
                </router-link>
            </div>
