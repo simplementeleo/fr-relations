@@ -26,3 +26,17 @@ export default {
   }
 }
 </script>
+<style>
+  .btn-base {
+        @apply py-2 px-4 bg-base text-white font-semibold rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-75 duration-300 transform;
+    }
+    .overlay {
+        @apply absolute left-0 top-0 w-full h-full;
+    }
+    .absolute-full {
+        @apply absolute left-0 top-0 w-full h-full;
+    }
+    .btn-red {
+        @apply bg-redme py-2 px-4 text-white font-semibold rounded-sm shadow-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-75 duration-300;
+    }
+</style>
