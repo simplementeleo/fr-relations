@@ -1,13 +1,13 @@
 <template>
     <div class="h-full items-strech bg-image relative" v-bind:style="{ backgroundImage: 'url('+require('../../assets/images' + image + '.jpg')+')' }">
-        <div class="overlay z-10"></div>
+        <div class="overlay absolute left-0 top-0 w-full h-full z-10"></div>
        
        <div class="absolute top-0 left-0 w-full h-full z-20 flex flex-col items-center justify-center py-12 opacity-0 show-slide">
             <h1 class="text-white text-center text-2xl md:text-4xl font-bold">
                 {{ title }}
             </h1>
             <router-link :to="{ name: path }">
-                <button class="btn-red mt-5">
+                <button class="bg-redme py-2 px-4 text-white font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-75 duration-300 transform mt-5">
                     {{ btnText }}
                 </button>
             </router-link>
@@ -22,6 +22,9 @@ export default {
 }
 </script>
 <style scoped lang="scss">
+.bg-redme {
+    background: red;
+}
     .bg-image {
         background-size: cover;
         background-position: left;

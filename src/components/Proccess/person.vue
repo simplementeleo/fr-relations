@@ -1,7 +1,7 @@
 <template>
 <div>
     <div class="card-people relative opacity-0 show-slide" v-bind:style="{ backgroundImage: 'url('+require('../../assets/images/people/' + (image + 1) + '-.jpg')+')', animationDelay: (image + 1) + '00ms' }">
-        <div class="overlay duration-300"></div>
+        <div class="overlay absolute left-0 top-0 w-full h-full duration-300"></div>
         <div class="menu duration-300 text-white absolute bottom-0 w-full flex justify-between" >
             <div :class="['duration-300', 'flex-grow', isActive ? 'w-0' : 'w-full']">
                 <div class="flex px-1 justify-between slide" v-if="!isActive">
