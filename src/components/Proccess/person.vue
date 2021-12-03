@@ -20,8 +20,8 @@
             <div class="bg-gray text-black cursor-pointer" @click="isActive = !isActive">
                 <img src="../../assets/images/icons/baseline_double_arrow_48.png" :class="['transform', isActive ? 'rotate-180' : 'rotate-0', 'icon-invert', 'duration-300']">
             </div>
-            <div :class="['bg-base', 'duration-300', !isActive ? 'w-0' : 'w-full']">
-                <div class="flex justify-around bg-base flex-grow slide" v-if="isActive">
+            <div :class="['bg-red-500', 'duration-300', !isActive ? 'w-0' : 'w-full']">
+                <div class="flex justify-around bg-red-500 flex-grow slide" v-if="isActive">
                     <div class="cursor-pointer duration-300 hover:bg-red-600 flex-grow h-full flex justify-center items-center">
                         <img class="icon-invert"  src="../../assets/images/icons/assignment48.png" width="40">
                     </div>
