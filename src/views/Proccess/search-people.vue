@@ -8,6 +8,7 @@
             :btnText="section.btnText"
             :path="section.path">
             </section-proccess-item>
+           
         </div>
 </template>
 <script>
