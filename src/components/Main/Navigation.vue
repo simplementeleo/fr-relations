@@ -10,7 +10,7 @@
                 </div>
                 <div class="items flex items-center">
                     <img src="../../assets/images/nav/search-icon.png" width="40px">
-                    <button class="bg-base p-3 rounded-sm text-white">
+                    <button class="bg-red-500 p-3 rounded-sm text-white">
                         Iniciar sesión
                     </button>
                 </div>
