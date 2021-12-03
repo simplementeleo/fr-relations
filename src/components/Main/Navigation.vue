@@ -26,4 +26,8 @@ export default {
     name: 'navigation'
 }
 </script>
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.bg-gray{
+    background: #333;
+}
+</style>
