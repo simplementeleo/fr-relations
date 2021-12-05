@@ -2,11 +2,11 @@
     <div>
         <div class="h-screen">
             <videobg></videobg>
-            <div class="absolute left-0 top-0 w-full h-full z-30 flex flex-col items-center justify-center">
+            <div class="absolute-full z-30 flex-center-all">
                 <img src="../../assets/images/nav/logo.png" class="w-2/12">
                 <div class="mt-16 flex">
                     <router-link v-for="(btn, i) in buttons" v-bind:key="i" :to="btn.path">
-                        <button v-on="i == 0 ? { click: changeActive } : {} " :class="['py-2', 'px-4', 'bg-red-500', 'text-white', 'font-semibold', 'rounded-md', 'shadow-md', 'focus:outline-none', 'focus:ring-2', 'focus:ring-red-500', 'focus:ring-opacity-75', 'duration-300', 'transform', 'uppercase', {'ml-4 md:ml-20': i}]">
+                        <button v-on="i == 0 ? { click: changeActive } : {} " :class="['btn-base', 'uppercase', {'ml-4 md:ml-20': i}]">
                             {{ btn.text }}
                         </button>
                     </router-link>
@@ -15,6 +15,11 @@
         </div>
     </div>
 </template>
+<style scoped>
+    .btn-base {
+        line-height: 35px;
+    }
+</style>
 <script>
 import { mapMutations, mapState } from 'vuex'
 import Videobg from '../../components/Home/Videobg'

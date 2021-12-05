@@ -1,9 +1,9 @@
 <template>
         <div :class="['grid', 'sm:grid-cols-2', 'h-full', 'bg-image', 'relative']">
            <div class="absolute left-0 top-0 w-full h-full z-10"></div>
-           <div class="overlay absolute left-0 top-0 w-full h-full z-20 flex items-center justify-center">
+           <div class="overlay z-20 flex-center-all">
                <router-link :to="{ name: 'People' }">
-                   <button class="bg-redme py-2 px-4 text-white font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-75 duration-300 transform uppercase opacity-0 show-slide">
+                   <button class="btn-red opacity-0 show-slide">
                        next 
                    </button>
                </router-link>
