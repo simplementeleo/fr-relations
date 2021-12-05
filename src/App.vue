@@ -2,7 +2,10 @@
   <div id="app">
     <div class="absolute w-full h-full left-0 top-0 flex flex-col">
       <navigation v-if="nav"></navigation>
-      <router-view/>
+      <!-- <router-view/> -->
+      <div class="btn-base">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, eaque quod? Assumenda odit officiis, ducimus rem delectus non repellendus consequuntur voluptatibus veritatis! Quis nam pariatur in ullam maxime, obcaecati fugit.
+      </div>
     </div>
   </div>
 </template>
@@ -27,6 +30,9 @@ export default {
 }
 </script>
 <style>
+.btn-base {
+    @apply py-2 px-4 bg-base text-white font-semibold rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-75 duration-300 transform text-6xl;
+}
 /* .btn-base {
     @apply py-2 px-4 bg-base text-white font-semibold rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-75 duration-300 transform;
 }
