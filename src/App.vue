@@ -30,9 +30,9 @@ export default {
 }
 </script>
 <style>
-.btn-base {
+/* .btn-base {
     @apply py-2 px-4 bg-base text-white font-semibold rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-75 duration-300 transform text-6xl;
-}
+} */
 /* .btn-base {
     @apply py-2 px-4 bg-base text-white font-semibold rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-75 duration-300 transform;
 }
