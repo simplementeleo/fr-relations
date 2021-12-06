@@ -7,7 +7,7 @@
                     </div>
                     <div class="items flex items-center">
                         <img src="../../assets/images/nav/search-icon.png" width="40px" class="mr-3">
-                        <button class="btn-base">
+                        <button class="bg-base p-3 rounded-sm text-white">
                             Iniciar sesión
                         </button>
                     </div>
