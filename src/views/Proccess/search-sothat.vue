@@ -6,7 +6,8 @@
             :title="section.title"
             :image="section.image"
             :btnText="section.btnText"
-            :path="section.path">
+            :path="section.path"
+            :param="section.param">
             </section-proccess-item>
         </div>
 </template>
@@ -22,19 +23,34 @@ export default {
                 title: 'Para casarme',
                 btnText: 'Sí, y formar una familia',
                 image: '/three-proccess/casarme',
-                path: 'SearchWhere'
+                path: 'SearchWhere',
+                 param: {
+                    index: 2,
+                    value: 'Casarme',
+                    show: true
+                }
             },
              {
                 title: 'Para una relación',
                 btnText: 'Sí, sin compromisos',
                 image: '/three-proccess/amigos',
-                path: 'SearchWhere'
+                path: 'SearchWhere',
+                 param: {
+                    index: 2,
+                    value: 'Relación',
+                    show: true
+                }
             },
              {
                 title: 'Para una amistad',
                 btnText: 'Sí, conocer personas',
                 image: '/three-proccess/amigos',
-                path: 'SearchWhere'
+                path: 'SearchWhere',
+                 param: {
+                    index: 2,
+                    value: 'Amistad',
+                    show: true
+                }
             }
         ]
     })

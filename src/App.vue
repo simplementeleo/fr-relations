@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div class="absolute w-full h-full left-0 top-0 flex flex-col">
+    <div class="absolute-full flex flex-col">
       <navigation v-if="nav"></navigation>
       <router-view/>
     </div>

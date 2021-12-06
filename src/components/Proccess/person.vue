@@ -1,27 +1,25 @@
 <template>
 <div>
-    <div class="card-people relative opacity-0 show-slide" v-bind:style="{ backgroundImage: 'url('+require('../../assets/images/people/' + (image + 1) + '-.jpg')+')', animationDelay: (image + 1) + '00ms' }">
+    <div class="card-people show-slide card-people-responsive" v-bind:style="{ backgroundImage: 'url('+require('../../assets/images/people/' + (image + 1) + '-.jpg')+')', animationDelay: (image + 1) + '00ms' }">
         <div class="overlay duration-300"></div>
         <div class="menu duration-300 text-white absolute bottom-0 w-full flex justify-between" >
             <div :class="['duration-300', 'flex-grow', isActive ? 'w-0' : 'w-full']">
-                <div class="flex px-1 justify-between slide" v-if="!isActive">
+                <div class="h-full flex items-center px-1 justify-between slide" v-if="!isActive">
                     <div class="flex flex-col">
                         <h1 class="text-md text-white font-bold"> {{ name }} {{ image }} </h1>
-                        <span class="italic text-sm"> {{ profession }} </span>
+                        <span class="italic text-sm text-gray-400"> {{ profession }} </span>
                     </div>
                     <div class="flex">
-                        <div v-for="(item, index) in items" v-bind:key="index" class="flex flex-col mr-3">
+                        <div v-for="(item, index) in items" v-bind:key="index" class="flex flex-col items-center mr-3">
                             <h1 class="text-md text-white font-bold"> {{ item.value }} </h1>
-                            <span class="italic text-sm"> {{ item.name }} </span>
+                            <span class="italic text-sm text-gray-400"> {{ item.name }} </span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="bg-gray text-black cursor-pointer" @click="isActive = !isActive">
-                <img src="../../assets/images/icons/baseline_double_arrow_48.png" :class="['transform', isActive ? 'rotate-180' : 'rotate-0', 'icon-invert', 'duration-300']">
-            </div>
-            <div :class="['bg-red-500', 'duration-300', !isActive ? 'w-0' : 'w-full']">
-                <div class="flex justify-around bg-red-500 flex-grow slide" v-if="isActive">
+            
+            <div :class="['duration-300', !isActive ? 'w-0' : 'w-full']">
+                <div class="flex justify-around bg-red-500 h-full flex-grow slide" v-if="isActive">
                     <div class="cursor-pointer duration-300 hover:bg-red-600 flex-grow h-full flex justify-center items-center">
                         <img class="icon-invert"  src="../../assets/images/icons/assignment48.png" width="40">
                     </div>
@@ -36,6 +34,11 @@
                     </div>
                 </div>
             </div>
+
+            <div class="bg-gray flex-center-all text-black cursor-pointer" @click="isActive = !isActive">
+                <img src="../../assets/images/icons/baseline_double_arrow_48.png" :class="['transform', isActive ? 'rotate-0' : 'rotate-180', 'icon-invert', 'duration-300', 'my-auto']">
+            </div>
+            
         </div>
         
     </div>
@@ -65,8 +68,6 @@ import { mapMutations } from 'vuex'
         background-size: cover;
         background-position: center;
         width: 100%;
-        height: 200px;
-
         &:hover {
             .overlay {
                 background: #0000;
@@ -83,7 +84,8 @@ import { mapMutations } from 'vuex'
 
         .menu {
             opacity: 0;
-            background: #0000008c;
+            background: #0000009f;
+            height: 60px;
         }
         .icon-invert {
             filter: invert(100%);

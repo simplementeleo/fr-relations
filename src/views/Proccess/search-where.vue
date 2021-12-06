@@ -3,7 +3,7 @@
            <div class="absolute left-0 top-0 w-full h-full z-10"></div>
            <div class="overlay z-20 flex-center-all">
                <router-link :to="{ name: 'People' }">
-                   <button class="btn-red opacity-0 show-slide">
+                   <button class="btn-red opacity-0 show-slide" @click="currentNav({index: 3, value: 'París', show: false})">
                        next 
                    </button>
                </router-link>
@@ -11,13 +11,21 @@
         </div>
 </template>
 <script>
+import { mapMutations } from 'vuex'
 import SectionProccessItem from '../../components/Proccess/section-proccess-item'
 export default {
     components: {
         SectionProccessItem
     },
-    data: () => ({
-    })
+    methods: {
+        ...mapMutations('nav', [
+            'currentNav'
+        ])
+    },
+    mounted() {
+        // console.log(this.$route.name)
+    //    console.log(this.$router.currentRoute.path)
+    }
 }
 </script>
 <style lang="scss" scoped>

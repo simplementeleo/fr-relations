@@ -1,7 +1,7 @@
 <template>
     <div>
         <video-current></video-current>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 h-full">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 h-full">
             <person 
             v-for="(person, index) in 36" 
             v-bind:key="index" 
@@ -32,6 +32,6 @@
             ...mapState({
                 persons: state => state.people.persons,
             })
-        }
+        },
     }
 </script>

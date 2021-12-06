@@ -1,13 +1,13 @@
 <template>
-    <div class="h-full items-strech bg-image relative" v-bind:style="{ backgroundImage: 'url('+require('../../assets/images' + image + '.jpg')+')' }">
+    <div class="section-item h-full items-strech bg-image relative" v-bind:style="{ backgroundImage: 'url('+require('../../assets/images' + image + '.jpg')+')' }">
         <div class="overlay z-10"></div>
        
        <div class="absolute top-0 left-0 w-full h-full z-20 flex flex-col items-center justify-center py-12 opacity-0 show-slide">
-            <h1 class="text-white text-center text-2xl md:text-4xl font-bold">
+            <h2 class="text-white text-center text-2xl md:text-4xl font-bold">
                 {{ title }}
-            </h1>
+            </h2>
             <router-link :to="{ name: path }">
-                <button class="btn-red mt-5">
+                <button class="btn-red mt-5" @click="currentNav(param)">
                     {{ btnText }}
                 </button>
             </router-link>
@@ -16,9 +16,15 @@
     </div>
 </template>
 <script>
+import { mapMutations } from 'vuex'
 export default {
     name: 'section-item',
-    props: ['image', 'title', 'btnText', 'path'],
+    props: ['image', 'title', 'btnText', 'path', 'param'],
+    methods: {
+        ...mapMutations('nav', [
+            'currentNav'
+        ])
+    }
 }
 </script>
 <style scoped lang="scss">

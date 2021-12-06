@@ -634,7 +634,7 @@ const people = {
                 ],
                 video: 'vide'
             },
-        ]
+        ],
     },
     mutations: {
         videoCurrent(state, video) {

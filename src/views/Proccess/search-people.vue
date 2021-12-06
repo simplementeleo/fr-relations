@@ -6,7 +6,9 @@
             :title="section.title"
             :image="section.image"
             :btnText="section.btnText"
-            :path="section.path">
+            :path="section.path"
+            :param="section.param"
+            >
             </section-proccess-item>
            
         </div>
@@ -23,13 +25,23 @@ export default {
                 title: 'Soy un hombre',
                 btnText: 'Empezar ahora',
                 image: '/one-proccess/hombre',
-                path: 'SearchGender'
+                path: 'SearchGender',
+                param: {
+                    index: 0,
+                    value: 'Hombre',
+                    show: true,
+                }
             },
              {
                 title: 'Soy una mujer',
                 btnText: 'Empezar ahora',
                 image: '/one-proccess/mujer',
-                path: 'SearchGender'
+                path: 'SearchGender',
+                 param: {
+                    index: 0,
+                    value: 'Mujer',
+                    show: true
+                }
             }
         ]
     })

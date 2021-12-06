@@ -6,7 +6,8 @@
             :title="section.title"
             :image="section.image"
             :btnText="section.btnText"
-            :path="section.path">
+            :path="section.path"
+            :param="section.param">
             </section-proccess-item>
         </div>
 </template>
@@ -22,13 +23,23 @@ export default {
                 title: 'Busco un hombre',
                 btnText: 'Sí, un hombre',
                 image: '/two-proccess/hombre',
-                path: 'SoThat'
+                path: 'SoThat',
+                 param: {
+                    index: 1,
+                    value: 'Hombre',
+                    show: true
+                }
             },
              {
                 title: 'Busco una mujer',
                 btnText: 'Sí, una mujer',
                 image: '/two-proccess/mujer',
-                path: 'SoThat'
+                path: 'SoThat',
+                 param: {
+                    index: 1,
+                    value: 'Mujer',
+                    show: true
+                }
             }
         ]
     })

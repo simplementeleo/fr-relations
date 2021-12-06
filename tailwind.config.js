@@ -9,6 +9,10 @@ module.exports = {
         gray: '#333',
         base: '#fa5655',
         redme: '#fe0000'
+      },
+      screens: {
+        '2xl': '1520px',
+        '3xl': '2100px'
       }
     },
   

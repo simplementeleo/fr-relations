@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+.section-item { font-family: 'Playfair Display', serif; font-weight: 500 }
+
 :root {
     --bg-base: #fa5655;
 }
-
-
 .overlay {
     @apply absolute left-0 top-0 w-full h-full;
 }
@@ -19,7 +19,6 @@
 .bg-gray {
     background: #333;
 }
-
 .btn-red {
     @apply bg-redme py-2 px-4 text-white font-semibold rounded-sm shadow-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-75 duration-300;
     line-height: 35px;
@@ -30,4 +29,8 @@
 
 .flex-center-all {
     @apply flex flex-col items-center justify-center;
+}
+/* Responsive */
+.card-people-responsive {
+    @apply relative opacity-0 h-96 sm:h-60 md:h-52 lg:h-48 xl:h-56 2xl:h-60 3xl:h-96;
 }
