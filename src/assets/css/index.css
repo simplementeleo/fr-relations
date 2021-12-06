@@ -4,9 +4,6 @@
 
 .section-item { font-family: 'Playfair Display', serif; font-weight: 500 }
 
-:root {
-    --bg-base: #fa5655;
-}
 .overlay {
     @apply absolute left-0 top-0 w-full h-full;
 }
@@ -14,7 +11,7 @@
     @apply absolute left-0 top-0 w-full h-full;
 }
 .bg-base {
-    backround: var(--bg-base);
+    background: #fa5655;
 } 
 .bg-gray {
     background: #333;
