@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <!-- <div> -->
         <div class="h-screen">
             <videobg></videobg>
             <div class="absolute-full z-30 flex-center-all">
@@ -13,7 +13,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    <!-- </div> -->
 </template>
 <style scoped>
     .btn-base {
