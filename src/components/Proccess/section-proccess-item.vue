@@ -2,7 +2,7 @@
     <div class="section-item h-full items-strech bg-image relative" v-bind:style="{ backgroundImage: 'url('+require('../../assets/images' + image + '.jpg')+')' }">
         <div class="overlay z-10"></div>
        
-       <div class="absolute top-0 left-0 w-full h-full z-20 flex flex-col items-center justify-center py-12 opacity-0 show-slide">
+       <div class="absolute-full z-20 flex-center-all py-12 opacity-0 show-slide">
             <h2 class="text-white text-center text-2xl md:text-4xl font-bold">
                 {{ title }}
             </h2>

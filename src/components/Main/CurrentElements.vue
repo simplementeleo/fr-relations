@@ -1,5 +1,5 @@
 <template>
-     <div class="bg-base flex">
+     <div class="bg-basecolor flex">
         <div class="menu flex justify-center font-bold items-center px-2 text-white">
             MENU
         </div>

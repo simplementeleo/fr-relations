@@ -1,5 +1,5 @@
 <template>
-        <nav class="bg-gray">
+        <nav class="bg-grayme">
             <div class="relative navigation">
                <div class="flex items-center justify-between p-3">
                     <div class="logo">
@@ -7,7 +7,7 @@
                     </div>
                     <div class="items flex items-center">
                         <img src="../../assets/images/nav/search-icon.png" width="40px" class="mr-3">
-                        <button class="bg-base p-3 rounded-sm text-white">
+                        <button class="bg-basecolor p-3 rounded-sm text-white">
                             Iniciar sesión
                         </button>
                     </div>

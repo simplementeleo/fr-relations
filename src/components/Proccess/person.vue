@@ -2,40 +2,38 @@
 <div>
     <div class="card-people show-slide card-people-responsive" v-bind:style="{ backgroundImage: 'url('+require('../../assets/images/people/' + (image + 1) + '-.jpg')+')', animationDelay: (image + 1) + '00ms' }">
         <div class="overlay duration-300"></div>
-        <div class="menu duration-300 text-white absolute bottom-0 w-full flex justify-between" >
+        <div class="menu menu-text-person" >
             <div :class="['duration-300', 'flex-grow', isActive ? 'w-0' : 'w-full']">
-                <div class="h-full flex items-center px-1 justify-between slide" v-if="!isActive">
+                <div class="menu-content slide" v-if="!isActive">
                     <div class="flex flex-col">
-                        <h1 class="text-md text-white font-bold"> {{ name }} {{ image }} </h1>
-                        <span class="italic text-sm text-gray-400"> {{ profession }} </span>
+                        <h1 class="text-h1-menu-person"> {{ name }} {{ image }} </h1>
+                        <span class="text-span-menu-person"> {{ profession }} </span>
                     </div>
                     <div class="flex">
                         <div v-for="(item, index) in items" v-bind:key="index" class="flex flex-col items-center mr-3">
-                            <h1 class="text-md text-white font-bold"> {{ item.value }} </h1>
-                            <span class="italic text-sm text-gray-400"> {{ item.name }} </span>
+                            <h1 class="text-h1-menu-person"> {{ item.value }} </h1>
+                            <span class="text-span-menu-person"> {{ item.name }} </span>
                         </div>
                     </div>
                 </div>
             </div>
-            
             <div :class="['duration-300', !isActive ? 'w-0' : 'w-full']">
-                <div class="flex justify-around bg-red-500 h-full flex-grow slide" v-if="isActive">
-                    <div class="cursor-pointer duration-300 hover:bg-red-600 flex-grow h-full flex justify-center items-center">
+                <div class="menu-elements-actions slide" v-if="isActive">
+                    <div class="item-menu-el">
                         <img class="icon-invert"  src="../../assets/images/icons/assignment48.png" width="40">
                     </div>
-                    <div class="cursor-pointer duration-300 hover:bg-red-600 flex-grow h-full flex justify-center items-center">
+                    <div class="item-menu-el">
                         <img class="icon-invert" src="../../assets/images/icons/question_answer48.png" width="40">
                     </div>
-                    <div class="cursor-pointer duration-300 hover:bg-red-600 flex-grow h-full flex justify-center items-center">
+                    <div class="item-menu-el">
                         <img class="icon-invert" src="../../assets/images/icons/favorite48.png" width="40">
                     </div>
-                    <div class="cursor-pointer duration-300 hover:bg-red-600 flex-grow h-full flex justify-center items-center" @click="videoCurrent(image+' Video')">
+                    <div class="item-menu-el" @click="videoCurrent(image+' Video')">
                         <img class="icon-invert" src="../../assets/images/icons/video48.png" width="40">
                     </div>
                 </div>
             </div>
-
-            <div class="bg-gray flex-center-all text-black cursor-pointer" @click="isActive = !isActive">
+            <div class="bg-grayme flex-center-all text-black cursor-pointer px-4" @click="isActive = !isActive">
                 <img src="../../assets/images/icons/baseline_double_arrow_48.png" :class="['transform', isActive ? 'rotate-0' : 'rotate-180', 'icon-invert', 'duration-300', 'my-auto']">
             </div>
             
@@ -85,7 +83,7 @@ import { mapMutations } from 'vuex'
         .menu {
             opacity: 0;
             background: #0000009f;
-            height: 60px;
+            min-height: 60px;
         }
         .icon-invert {
             filter: invert(100%);
