@@ -40,5 +40,105 @@ export default {
     .bg-redme {
         background: red;
     }
+    /*Color BG Animation*/
+
+ 
+
+.wsfanimatedcolors {
+
+                background: linear-gradient(180deg, #fb5f65, #f7c66d, #6fce6f, #49a5ea, #9b6de3);
+
+                background-size: 1000% 1000%;
+
+                -webkit-animation: wsgdrcolors 10s ease infinite;
+
+                -moz-animation: wsgdrcolors 10s ease infinite;
+
+                animation: wsgdrcolors 10s ease infinite;
+
+}
+
+ 
+
+@-webkit-keyframes wsgdrcolors {
+
+                0% {
+
+                               background-position: 0% 90%
+
+                }
+
+ 
+
+                50% {
+
+                               background-position: 100% 11%
+
+                }
+
+ 
+
+                100% {
+
+                               background-position: 0% 90%
+
+                }
+
+}
+
+ 
+
+@-moz-keyframes wsgdrcolors {
+
+                0% {
+
+                               background-position: 0% 90%
+
+                }
+
+ 
+
+                50% {
+
+                               background-position: 100% 11%
+
+                }
+
+ 
+
+                100% {
+
+                               background-position: 0% 90%
+
+                }
+
+}
+
+ 
+
+@keyframes wsgdrcolors {
+
+                0% {
+
+                               background-position: 0% 90%
+
+                }
+
+ 
+
+                50% {
+
+                               background-position: 100% 11%
+
+                }
+
+ 
+
+                100% {
+
+                               background-position: 0% 90%
+
+
+                }}
 </style>
    

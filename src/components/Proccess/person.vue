@@ -4,13 +4,13 @@
         <div class="overlay duration-300"></div>
         <div class="menu menu-text-person" >
             <div :class="['duration-300', 'flex-grow', isActive ? 'w-0' : 'w-full']">
-                <div class="menu-content slide" v-if="!isActive">
+                <div class="menu-content slideNow" v-if="!isActive">
                     <div class="flex flex-col">
                         <h1 class="text-h1-menu-person"> {{ name }} {{ image }} </h1>
                         <span class="text-span-menu-person"> {{ profession }} </span>
                     </div>
                     <div class="flex">
-                        <div v-for="(item, index) in items" v-bind:key="index" class="flex flex-col items-center mr-3">
+                        <div v-for="(item, index) in items" v-bind:key="index" class="flex flex-col items-center ml-3">
                             <h1 class="text-h1-menu-person"> {{ item.value }} </h1>
                             <span class="text-span-menu-person"> {{ item.name }} </span>
                         </div>
@@ -84,6 +84,8 @@ import { mapMutations } from 'vuex'
             opacity: 0;
             background: #0000009f;
             min-height: 60px;
+            max-height: 60px;
+
         }
         .icon-invert {
             filter: invert(100%);

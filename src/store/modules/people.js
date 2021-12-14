@@ -14,10 +14,6 @@ const people = {
                         value: 170,
                         name: 'Alt.'
                     },
-                    {
-                        value: 23,
-                        name: 'Peso'
-                    },
                 ],
                 video: 'vide'
             },
@@ -33,9 +29,19 @@ const people = {
                         value: 170,
                         name: 'Alt.'
                     },
+                ],
+                video: 'vide'
+            }, {
+                image: 'ima',
+                name: 'Person ',
+                profession: 'Profession',
+                items: [{
+                        value: 22,
+                        name: 'Edad'
+                    },
                     {
-                        value: 23,
-                        name: 'Peso'
+                        value: 170,
+                        name: 'Alt.'
                     },
                 ],
                 video: 'vide'
@@ -51,9 +57,19 @@ const people = {
                         value: 170,
                         name: 'Alt.'
                     },
+                ],
+                video: 'vide'
+            }, {
+                image: 'ima',
+                name: 'Person ',
+                profession: 'Profession',
+                items: [{
+                        value: 22,
+                        name: 'Edad'
+                    },
                     {
-                        value: 23,
-                        name: 'Peso'
+                        value: 170,
+                        name: 'Alt.'
                     },
                 ],
                 video: 'vide'
@@ -69,9 +85,19 @@ const people = {
                         value: 170,
                         name: 'Alt.'
                     },
+                ],
+                video: 'vide'
+            }, {
+                image: 'ima',
+                name: 'Person ',
+                profession: 'Profession',
+                items: [{
+                        value: 22,
+                        name: 'Edad'
+                    },
                     {
-                        value: 23,
-                        name: 'Peso'
+                        value: 170,
+                        name: 'Alt.'
                     },
                 ],
                 video: 'vide'
@@ -87,9 +113,19 @@ const people = {
                         value: 170,
                         name: 'Alt.'
                     },
+                ],
+                video: 'vide'
+            }, {
+                image: 'ima',
+                name: 'Person ',
+                profession: 'Profession',
+                items: [{
+                        value: 22,
+                        name: 'Edad'
+                    },
                     {
-                        value: 23,
-                        name: 'Peso'
+                        value: 170,
+                        name: 'Alt.'
                     },
                 ],
                 video: 'vide'
@@ -105,9 +141,19 @@ const people = {
                         value: 170,
                         name: 'Alt.'
                     },
+                ],
+                video: 'vide'
+            }, {
+                image: 'ima',
+                name: 'Person ',
+                profession: 'Profession',
+                items: [{
+                        value: 22,
+                        name: 'Edad'
+                    },
                     {
-                        value: 23,
-                        name: 'Peso'
+                        value: 170,
+                        name: 'Alt.'
                     },
                 ],
                 video: 'vide'
@@ -123,9 +169,19 @@ const people = {
                         value: 170,
                         name: 'Alt.'
                     },
+                ],
+                video: 'vide'
+            }, {
+                image: 'ima',
+                name: 'Person ',
+                profession: 'Profession',
+                items: [{
+                        value: 22,
+                        name: 'Edad'
+                    },
                     {
-                        value: 23,
-                        name: 'Peso'
+                        value: 170,
+                        name: 'Alt.'
                     },
                 ],
                 video: 'vide'
@@ -141,9 +197,19 @@ const people = {
                         value: 170,
                         name: 'Alt.'
                     },
+                ],
+                video: 'vide'
+            }, {
+                image: 'ima',
+                name: 'Person ',
+                profession: 'Profession',
+                items: [{
+                        value: 22,
+                        name: 'Edad'
+                    },
                     {
-                        value: 23,
-                        name: 'Peso'
+                        value: 170,
+                        name: 'Alt.'
                     },
                 ],
                 video: 'vide'
@@ -159,9 +225,19 @@ const people = {
                         value: 170,
                         name: 'Alt.'
                     },
+                ],
+                video: 'vide'
+            }, {
+                image: 'ima',
+                name: 'Person ',
+                profession: 'Profession',
+                items: [{
+                        value: 22,
+                        name: 'Edad'
+                    },
                     {
-                        value: 23,
-                        name: 'Peso'
+                        value: 170,
+                        name: 'Alt.'
                     },
                 ],
                 video: 'vide'
@@ -177,9 +253,19 @@ const people = {
                         value: 170,
                         name: 'Alt.'
                     },
+                ],
+                video: 'vide'
+            }, {
+                image: 'ima',
+                name: 'Person ',
+                profession: 'Profession',
+                items: [{
+                        value: 22,
+                        name: 'Edad'
+                    },
                     {
-                        value: 23,
-                        name: 'Peso'
+                        value: 170,
+                        name: 'Alt.'
                     },
                 ],
                 video: 'vide'
@@ -195,9 +281,19 @@ const people = {
                         value: 170,
                         name: 'Alt.'
                     },
+                ],
+                video: 'vide'
+            }, {
+                image: 'ima',
+                name: 'Person ',
+                profession: 'Profession',
+                items: [{
+                        value: 22,
+                        name: 'Edad'
+                    },
                     {
-                        value: 23,
-                        name: 'Peso'
+                        value: 170,
+                        name: 'Alt.'
                     },
                 ],
                 video: 'vide'
@@ -213,9 +309,19 @@ const people = {
                         value: 170,
                         name: 'Alt.'
                     },
+                ],
+                video: 'vide'
+            }, {
+                image: 'ima',
+                name: 'Person ',
+                profession: 'Profession',
+                items: [{
+                        value: 22,
+                        name: 'Edad'
+                    },
                     {
-                        value: 23,
-                        name: 'Peso'
+                        value: 170,
+                        name: 'Alt.'
                     },
                 ],
                 video: 'vide'
@@ -231,9 +337,19 @@ const people = {
                         value: 170,
                         name: 'Alt.'
                     },
+                ],
+                video: 'vide'
+            }, {
+                image: 'ima',
+                name: 'Person ',
+                profession: 'Profession',
+                items: [{
+                        value: 22,
+                        name: 'Edad'
+                    },
                     {
-                        value: 23,
-                        name: 'Peso'
+                        value: 170,
+                        name: 'Alt.'
                     },
                 ],
                 video: 'vide'
@@ -249,9 +365,19 @@ const people = {
                         value: 170,
                         name: 'Alt.'
                     },
+                ],
+                video: 'vide'
+            }, {
+                image: 'ima',
+                name: 'Person ',
+                profession: 'Profession',
+                items: [{
+                        value: 22,
+                        name: 'Edad'
+                    },
                     {
-                        value: 23,
-                        name: 'Peso'
+                        value: 170,
+                        name: 'Alt.'
                     },
                 ],
                 video: 'vide'
@@ -267,9 +393,19 @@ const people = {
                         value: 170,
                         name: 'Alt.'
                     },
+                ],
+                video: 'vide'
+            }, {
+                image: 'ima',
+                name: 'Person ',
+                profession: 'Profession',
+                items: [{
+                        value: 22,
+                        name: 'Edad'
+                    },
                     {
-                        value: 23,
-                        name: 'Peso'
+                        value: 170,
+                        name: 'Alt.'
                     },
                 ],
                 video: 'vide'
@@ -285,9 +421,19 @@ const people = {
                         value: 170,
                         name: 'Alt.'
                     },
+                ],
+                video: 'vide'
+            }, {
+                image: 'ima',
+                name: 'Person ',
+                profession: 'Profession',
+                items: [{
+                        value: 22,
+                        name: 'Edad'
+                    },
                     {
-                        value: 23,
-                        name: 'Peso'
+                        value: 170,
+                        name: 'Alt.'
                     },
                 ],
                 video: 'vide'
@@ -303,9 +449,19 @@ const people = {
                         value: 170,
                         name: 'Alt.'
                     },
+                ],
+                video: 'vide'
+            }, {
+                image: 'ima',
+                name: 'Person ',
+                profession: 'Profession',
+                items: [{
+                        value: 22,
+                        name: 'Edad'
+                    },
                     {
-                        value: 23,
-                        name: 'Peso'
+                        value: 170,
+                        name: 'Alt.'
                     },
                 ],
                 video: 'vide'
@@ -321,10 +477,6 @@ const people = {
                         value: 170,
                         name: 'Alt.'
                     },
-                    {
-                        value: 23,
-                        name: 'Peso'
-                    },
                 ],
                 video: 'vide'
             }, {
@@ -338,298 +490,6 @@ const people = {
                     {
                         value: 170,
                         name: 'Alt.'
-                    },
-                    {
-                        value: 23,
-                        name: 'Peso'
-                    },
-                ],
-                video: 'vide'
-            }, {
-                image: 'ima',
-                name: 'Person ',
-                profession: 'Profession',
-                items: [{
-                        value: 22,
-                        name: 'Edad'
-                    },
-                    {
-                        value: 170,
-                        name: 'Alt.'
-                    },
-                    {
-                        value: 23,
-                        name: 'Peso'
-                    },
-                ],
-                video: 'vide'
-            }, {
-                image: 'ima',
-                name: 'Person ',
-                profession: 'Profession',
-                items: [{
-                        value: 22,
-                        name: 'Edad'
-                    },
-                    {
-                        value: 170,
-                        name: 'Alt.'
-                    },
-                    {
-                        value: 23,
-                        name: 'Peso'
-                    },
-                ],
-                video: 'vide'
-            }, {
-                image: 'ima',
-                name: 'Person ',
-                profession: 'Profession',
-                items: [{
-                        value: 22,
-                        name: 'Edad'
-                    },
-                    {
-                        value: 170,
-                        name: 'Alt.'
-                    },
-                    {
-                        value: 23,
-                        name: 'Peso'
-                    },
-                ],
-                video: 'vide'
-            }, {
-                image: 'ima',
-                name: 'Person ',
-                profession: 'Profession',
-                items: [{
-                        value: 22,
-                        name: 'Edad'
-                    },
-                    {
-                        value: 170,
-                        name: 'Alt.'
-                    },
-                    {
-                        value: 23,
-                        name: 'Peso'
-                    },
-                ],
-                video: 'vide'
-            }, {
-                image: 'ima',
-                name: 'Person ',
-                profession: 'Profession',
-                items: [{
-                        value: 22,
-                        name: 'Edad'
-                    },
-                    {
-                        value: 170,
-                        name: 'Alt.'
-                    },
-                    {
-                        value: 23,
-                        name: 'Peso'
-                    },
-                ],
-                video: 'vide'
-            }, {
-                image: 'ima',
-                name: 'Person ',
-                profession: 'Profession',
-                items: [{
-                        value: 22,
-                        name: 'Edad'
-                    },
-                    {
-                        value: 170,
-                        name: 'Alt.'
-                    },
-                    {
-                        value: 23,
-                        name: 'Peso'
-                    },
-                ],
-                video: 'vide'
-            }, {
-                image: 'ima',
-                name: 'Person ',
-                profession: 'Profession',
-                items: [{
-                        value: 22,
-                        name: 'Edad'
-                    },
-                    {
-                        value: 170,
-                        name: 'Alt.'
-                    },
-                    {
-                        value: 23,
-                        name: 'Peso'
-                    },
-                ],
-                video: 'vide'
-            }, {
-                image: 'ima',
-                name: 'Person ',
-                profession: 'Profession',
-                items: [{
-                        value: 22,
-                        name: 'Edad'
-                    },
-                    {
-                        value: 170,
-                        name: 'Alt.'
-                    },
-                    {
-                        value: 23,
-                        name: 'Peso'
-                    },
-                ],
-                video: 'vide'
-            }, {
-                image: 'ima',
-                name: 'Person ',
-                profession: 'Profession',
-                items: [{
-                        value: 22,
-                        name: 'Edad'
-                    },
-                    {
-                        value: 170,
-                        name: 'Alt.'
-                    },
-                    {
-                        value: 23,
-                        name: 'Peso'
-                    },
-                ],
-                video: 'vide'
-            }, {
-                image: 'ima',
-                name: 'Person ',
-                profession: 'Profession',
-                items: [{
-                        value: 22,
-                        name: 'Edad'
-                    },
-                    {
-                        value: 170,
-                        name: 'Alt.'
-                    },
-                    {
-                        value: 23,
-                        name: 'Peso'
-                    },
-                ],
-                video: 'vide'
-            }, {
-                image: 'ima',
-                name: 'Person ',
-                profession: 'Profession',
-                items: [{
-                        value: 22,
-                        name: 'Edad'
-                    },
-                    {
-                        value: 170,
-                        name: 'Alt.'
-                    },
-                    {
-                        value: 23,
-                        name: 'Peso'
-                    },
-                ],
-                video: 'vide'
-            }, {
-                image: 'ima',
-                name: 'Person ',
-                profession: 'Profession',
-                items: [{
-                        value: 22,
-                        name: 'Edad'
-                    },
-                    {
-                        value: 170,
-                        name: 'Alt.'
-                    },
-                    {
-                        value: 23,
-                        name: 'Peso'
-                    },
-                ],
-                video: 'vide'
-            }, {
-                image: 'ima',
-                name: 'Person ',
-                profession: 'Profession',
-                items: [{
-                        value: 22,
-                        name: 'Edad'
-                    },
-                    {
-                        value: 170,
-                        name: 'Alt.'
-                    },
-                    {
-                        value: 23,
-                        name: 'Peso'
-                    },
-                ],
-                video: 'vide'
-            }, {
-                image: 'ima',
-                name: 'Person ',
-                profession: 'Profession',
-                items: [{
-                        value: 22,
-                        name: 'Edad'
-                    },
-                    {
-                        value: 170,
-                        name: 'Alt.'
-                    },
-                    {
-                        value: 23,
-                        name: 'Peso'
-                    },
-                ],
-                video: 'vide'
-            }, {
-                image: 'ima',
-                name: 'Person ',
-                profession: 'Profession',
-                items: [{
-                        value: 22,
-                        name: 'Edad'
-                    },
-                    {
-                        value: 170,
-                        name: 'Alt.'
-                    },
-                    {
-                        value: 23,
-                        name: 'Peso'
-                    },
-                ],
-                video: 'vide'
-            }, {
-                image: 'ima',
-                name: 'Person ',
-                profession: 'Profession',
-                items: [{
-                        value: 22,
-                        name: 'Edad'
-                    },
-                    {
-                        value: 170,
-                        name: 'Alt.'
-                    },
-                    {
-                        value: 23,
-                        name: 'Peso'
                     },
                 ],
                 video: 'vide'

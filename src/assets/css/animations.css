@@ -11,8 +11,27 @@
     animation: .5s showSlide ease-in-out forwards;
 }
 @keyframes showSlide {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
     to {
         opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.slideNow {
+    opacity: 0;
+    animation: .5s slideNow ease-in-out forwards 200ms;
+}
+@keyframes slideNow {
+    from {
+        opacity: 0;
         transform: translateY(-5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

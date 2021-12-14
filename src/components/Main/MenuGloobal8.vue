@@ -1,17 +1,15 @@
 <template>
     <div>
-        <div class="bg-white p-5 cursor-pointer" @click="general = !general">
-            <h1 class="text-black">
-                MENU
-            </h1>
+        <div class="px-3 py-2 cursor-pointer" @click="general = !general">
+            <icon-burguer :show="false" />
         </div>
 
         <div v-if="general">
             <div class="fixed h-full w-full top-0 left-0 z-40 menu-bg-main">
                 <div class="menu-sidebar h-full bg-blue-500 slide">
                     <div class="flex bg-white items-center py-2">
-                        <div class="bg-green-500 p-3 w-10 h-10 text-white cursor-pointer" @click="general = !general">
-                            cerrar
+                        <div @click="general = !general" class="px-2">
+                            <icon-burguer :show="true" />
                         </div>
                         <img src="../../assets/images/nav/sidebar/logo-menu-res.png" alt="Gloobal8 Rencontres FR">
                     </div>
@@ -56,6 +54,7 @@
     </div>
 </template>
 <script>
+    import IconBurguer from './icon-burguer.vue'
     export default {
         name: 'menu-gloobal8',
         data: () => ({
@@ -355,8 +354,11 @@
                     }
                 },
 
-            ]
-        })
+            ],
+        }),
+        components: {
+            IconBurguer
+        }
     }
 </script>
 <style scoped lang="scss">

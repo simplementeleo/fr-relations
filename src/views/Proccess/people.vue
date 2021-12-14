@@ -8,7 +8,7 @@
             :image="index" 
             name="Person "
             profession="Profession"
-            :items="[{name: 'Edad', value: 22},{name: 'Alt', value: 170},{name: 'Peso', value: 58}]" 
+            :items="[{name: 'Edad', value: 22},{name: 'Alt', value: 170}]" 
             video="video">
             </person>
         </div>

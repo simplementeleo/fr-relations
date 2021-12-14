@@ -42,14 +42,15 @@ h2 {
     @apply duration-300 text-white absolute bottom-0 w-full flex justify-between;
 }
 .menu-content {
-    @apply h-full flex items-center px-1 justify-between;
+    @apply h-full flex items-center px-2 justify-between;
 }
 .text-h1-menu-person {
-    @apply text-base xl:text-base 3xl:text-3xl text-white font-bold;
+    @apply text-base xl:text-base 2xl:text-xl 3xl:text-2xl text-white font-bold;
 }
 .text-span-menu-person {
-    @apply italic text-sm xl:text-sm 3xl:text-2xl text-gray-400;
+    @apply italic text-sm 2xl:text-base 3xl:text-xl text-gray-400;
 }
+
 
 /* Responsive */
 .card-people-responsive {
