@@ -1,15 +1,15 @@
 <template>
     <div>
-        <div class="px-3 py-2 cursor-pointer" @click="general = !general">
-            <icon-burguer :show="false" />
+        <div class="px-3 py-2 cursor-pointer" @click="IsShowSidebar(false)">
+            <icon-burguer color="white" :show="isActiveBurger ? {animate: 'Out', delay: delayInput} : { delay: delayInput, animate: 'Input'}" />
         </div>
 
         <div v-if="general">
             <div class="fixed h-full w-full top-0 left-0 z-40 menu-bg-main">
-                <div class="menu-sidebar h-full bg-blue-500 slide">
+                <div class="menu-sidebar h-full slide">
                     <div class="flex bg-white items-center py-2">
-                        <div @click="general = !general" class="px-2">
-                            <icon-burguer :show="true" />
+                        <div @click="IsShowSidebar(true)" class="px-2">
+                            <icon-burguer color="black" :show="isActiveBurger ? {animate: 'Input', delay: delayInput} : {animate: 'Out', delay: delayInput}" />
                         </div>
                         <img src="../../assets/images/nav/sidebar/logo-menu-res.png" alt="Gloobal8 Rencontres FR">
                     </div>
@@ -21,10 +21,10 @@
                         </div>
                     </div>
 
-                    <div class="overflow-y-auto h-full bg-blue-500 pb-60 menu-overflow">
+                    <div class="overflow-y-auto menu-overflow">
 
                         <div v-for="(item, index) in items" v-bind:key="index">
-                            <div class="item-sidebar py-4 px-5 bg-white duration-300 cursor-pointer" @click="item.dropdown.isActive = !item.dropdown.isActive">
+                            <div class="item-sidebar py-4 px-5 bg-white duration-300 cursor-pointer">
                                 <div class="font-bold flex justify-between">
                                     <div class="title"> 
                                         <a :href="item.href.show ? item.href.link : '#'">
@@ -35,7 +35,7 @@
                                 </div>
                             </div>
                             <ul v-if="item.dropdown.show" :class="['dropdown', item.dropdown.isActive ? 'h-full' : 'h-0', 'duration-300']">
-                                <div v-if="isActive" class="slide">
+                                <div v-if="isActiveItem" class="slide">
                                     <li v-for="(li, i) in item.dropdown.content" v-bind:key="i">
                                         <a :href="li.link" class="px-6 py-4 block item-dropdown">
                                             {{ li.title }}
@@ -44,6 +44,11 @@
                                 </div>
                             </ul>
                         </div>
+
+                        <div class="wsfanimatedcolors flex-center-all py-6">
+                            <img src="../../assets/images/nav/sidebar/logo-blanco.png">
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -59,7 +64,9 @@
         name: 'menu-gloobal8',
         data: () => ({
             general: false,
-            isActive: false,
+            isActiveBurger: false,
+            isActiveItem: false,
+            delayInput: '',
             items: [
                 {
                     iconMain: '',
@@ -311,7 +318,7 @@
                 },
                  {
                     iconMain: '',
-                    title: 'Gloobla Rencontres',
+                    title: 'Glooblal Rencontres',
                     href: {
                         show: false,
                         link: ''
@@ -358,21 +365,31 @@
         }),
         components: {
             IconBurguer
+        },
+        methods: {
+            IsShowSidebar(delay){
+                this.delayInput = delay
+                this.isActiveBurger = !this.isActiveBurger
+                setTimeout(() => { this.general = !this.general }, 500)
+            },
+        },
+        mounted(){
         }
     }
 </script>
 <style scoped lang="scss">
     $base: #fa5655;
+    $gray: #efefef;
     .menu-bg-main {
         background: #0000008e;
     }
-
+    
     .menu-sidebar {
         width: 264px;
         max-width: 264px;
-
+        background: $gray;
         .item-sidebar {
-            background: #efefef;
+            background: $gray;
             color: #444;
 
             &:hover {
@@ -397,6 +414,8 @@
                 background: #e1e1e1;
                 border-radius: 4px;
             }
+            height: 100vh;
+            padding-bottom: 13rem;
         }
 
         .dropdown {

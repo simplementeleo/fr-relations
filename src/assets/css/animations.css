@@ -1,20 +1,24 @@
 .slide {
     animation: .3s slide ease-in-out;
 }
+
 @keyframes slide {
     from {
         opacity: 0;
         transform: translateY(-2px);
     }
 }
+
 .show-slide {
     animation: .5s showSlide ease-in-out forwards;
 }
+
 @keyframes showSlide {
     from {
         opacity: 0;
         transform: translateY(-5px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -25,13 +29,58 @@
     opacity: 0;
     animation: .5s slideNow ease-in-out forwards 200ms;
 }
+
 @keyframes slideNow {
     from {
         opacity: 0;
         transform: translateY(-5px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+.wsfanimatedcolors {
+    background: linear-gradient(180deg, #fb5f65, #f7c66d, #6fce6f, #49a5ea, #9b6de3);
+    background-size: 1000% 1000%;
+    -webkit-animation: wsgdrcolors 10s ease infinite;
+    -moz-animation: wsgdrcolors 10s ease infinite;
+    animation: wsgdrcolors 10s ease infinite;
+}
+
+@-webkit-keyframes wsgdrcolors {
+    0% {
+        background-position: 0% 90%
+    }
+    50% {
+        background-position: 100% 11%
+    }
+    100% {
+        background-position: 0% 90%
+    }
+}
+
+@-moz-keyframes wsgdrcolors {
+    0% {
+        background-position: 0% 90%
+    }
+    50% {
+        background-position: 100% 11%
+    }
+    100% {
+        background-position: 0% 90%
+    }
+}
+@keyframes wsgdrcolors {
+    0% {
+        background-position: 0% 90%
+    }
+    50% {
+        background-position: 100% 11%
+    }
+    100% {
+        background-position: 0% 90%
     }
 }
