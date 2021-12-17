@@ -1,15 +1,10 @@
 <template>
     <div>
-        <div  :class="['container', show.animate, color]">
+        <div :class="['container', show.animate, color]">
             <div class="linea1"></div>
             <div class="linea2"></div>
             <div class="linea3"></div>
         </div>
-         <!-- <div v-if="show.delay" :class="['container', show.animate, color]">
-            <div class="linea1" :style=" `animation-delay: ${ 1000 }`"></div>
-            <div class="linea2" :style=" `animation-delay: ${ 1100}`"></div>
-            <div class="linea3" :style=" `animation-delay: ${ 1200}`"></div>
-        </div> -->
     </div>
 </template>
 <script>
