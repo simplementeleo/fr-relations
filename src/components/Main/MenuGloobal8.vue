@@ -31,11 +31,15 @@
                                             {{ item.title }}
                                         </a>
                                     </div>
-                                    <div v-if="item.iconArrow">></div>
+                                    <div v-if="item.iconArrow">
+                                        <div @click="current(index)">
+                                            <img src="../../assets/images/icons/baseline_expand_more_black_24dp-48.png" width="24px">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <ul v-if="item.dropdown.show" :class="['dropdown', item.dropdown.isActive ? 'h-full' : 'h-0', 'duration-300']">
-                                <div v-if="isActiveItem" class="slide">
+                            <ul v-if="item.dropdown.show" :class="['dropdown', 'duration-300']">
+                                <div v-if="isActiveItem == index" class="slide">
                                     <li v-for="(li, i) in item.dropdown.content" v-bind:key="i">
                                         <a :href="li.link" class="px-6 py-4 block item-dropdown">
                                             {{ li.title }}
@@ -65,8 +69,9 @@
         data: () => ({
             general: false,
             isActiveBurger: false,
-            isActiveItem: false,
+            isActiveItem: '-',
             delayInput: '',
+
             items: [
                 {
                     iconMain: '',
@@ -372,6 +377,9 @@
                 this.isActiveBurger = !this.isActiveBurger
                 setTimeout(() => { this.general = !this.general }, 500)
             },
+            current(index) {
+                this.isActiveItem == index ? this.isActiveItem = '-' : this.isActiveItem = index
+            }
         },
         mounted(){
         }

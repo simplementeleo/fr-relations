@@ -55,6 +55,10 @@ h2 {
     @apply cursor-pointer flex items-center;
 }
 
+.icon-invert {
+    filter: invert(100%);
+}
+
 
 /* Responsive */
 .card-people-responsive {

@@ -1,6 +1,7 @@
 const navigation = {
   namespaced: true,
   state: {
+    filteringSearch: false,
     isActive: false,
     currentElements: [
       { el: 'Especifica tu genero', show: true, arrow: false, span: '¿Qué soy?'},
@@ -20,7 +21,10 @@ const navigation = {
       if (current.index != 3) {
         state.currentElements[current.index + 1].show = current.show
       }
-      console.log(state.currentElements[current.index].el)
+      // console.log(state.currentElements[current.index].el)
+    },
+    changeFilteringSearch(state){
+      state.filteringSearch = !state.filteringSearch
     }
   },
   actions: {
