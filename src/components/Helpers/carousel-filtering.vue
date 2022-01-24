@@ -13,7 +13,7 @@
                 </div>
             </template>
             <template slot="next">
-                <div class="absolute bg-basecolor right-0 top-0 z-10 cursor-pointer next flex-center-all">
+                <div class="absolute right-0 top-0 z-10 cursor-pointer next flex-center-all">
                     <img src="../../assets/images/icons/baseline_arrow_forward_ios_black_24dp-48.png" class="icon-invert">
                 </div>
             </template>
@@ -41,14 +41,14 @@ export default {
             this.currentItem = index
             if (this.invert) {
                 this.CHANGE_SUB_ITEM(index)
-            }else {
+            } else {
                 this.CHANGE_ITEM_MAIN(index)
             }
         }
     },
     mounted() {
-        let test = document.querySelector('.carousel span')
-        test.style.display = 'block'
+        // let test = document.querySelector('.carousel span')
+        // test.style.display = 'block'
     }
 }
 </script>
@@ -68,6 +68,7 @@ export default {
         .next {
             height: $height-main;
             border-bottom: 3px solid $redobs;
+            background: $base;
         }
 
         .prev {

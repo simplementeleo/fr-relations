@@ -1,7 +1,7 @@
 <template>
     <div v-if="isActive" class="absolute-full slide main-base z-30">
         <div class="fixed-full overlay"></div>
-        <div class="main-menu absolute top-0 left-0 z-40 bg-white">
+        <div class="main-menu z-40 bg-white">
             <div class="bg-grayme relative">
                 <div class="absolute main-close cursor-pointer">
                     <div class="close bg-white my-auto" @click="changeFilteringSearch">
@@ -58,8 +58,9 @@
     }
 
     .main-base {
-
         .main-menu {
+            position: absolute;
+            top: -84px;
             width: 50vw;
             min-width: 300px;
             max-width: 50vw;

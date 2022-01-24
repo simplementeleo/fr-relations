@@ -11,7 +11,6 @@
 
         <filter-main-sidebar :show="isActive"></filter-main-sidebar>
 
-
     </div>
 </template>
 <script>
