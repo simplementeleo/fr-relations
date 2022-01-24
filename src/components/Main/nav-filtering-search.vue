@@ -2,25 +2,25 @@
     <div class="px-3 py-1 text-white flex font-bold">
         <div class="icon-nav-right mr-4">
             <img class="icon-invert mr-1" src="../../assets/images/icons/favorite24.png">
-            <span>Guardar Búsqueda</span>
+            <span class="hidden md:block">Guardar Búsqueda</span>
         </div>
         <div class="icon-nav-right" @click="changeFilteringSearch">
             <img class="icon-invert mr-1" src="../../assets/images/icons/outline_tune_black_24dp-24.png">
-            <span>Filtros de Búsqueda</span>
+            <span class="hidden md:block">Filtros de Búsqueda</span>
         </div>
 
-        <filter-main :show="isActive"></filter-main>
+        <filter-main-sidebar :show="isActive"></filter-main-sidebar>
 
 
     </div>
 </template>
 <script>
 import { mapState, mapMutations } from 'vuex'
-import FilterMain from '../Filters/filter-main.vue'
+import FilterMainSidebar from '../Filters/filter-main-sidebar.vue'
 export default {
-    name: 'filtering-search',
+    name: 'nav-filtering-search',
     components: {
-        FilterMain
+        FilterMainSidebar
     },
     data: () => ({
     }),

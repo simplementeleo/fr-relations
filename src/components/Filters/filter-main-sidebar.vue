@@ -1,6 +1,6 @@
 <template>
     <div v-if="isActive" class="absolute-full slide main-base z-30">
-        <div class="absolute-full overlay"></div>
+        <div class="fixed-full overlay"></div>
         <div class="main-menu absolute top-0 left-0 z-40 bg-white">
             <div class="bg-grayme relative">
                 <div class="absolute main-close cursor-pointer">

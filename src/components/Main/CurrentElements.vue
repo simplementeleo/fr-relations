@@ -23,11 +23,11 @@
                 </div>
             </div>
         </div>
-       <filtering-search></filtering-search>
+       <nav-filtering-search></nav-filtering-search>
     </div>
 </template>
 <script>
-import FilteringSearch from './filtering-search.vue'
+import NavFilteringSearch from './nav-filtering-search.vue'
 import MenuGloobal8 from './MenuGloobal8.vue'
 import carousel from 'vue-owl-carousel'
 import { mapState } from 'vuex'
@@ -48,7 +48,7 @@ export default {
     components: {
         carousel,
         MenuGloobal8,
-        FilteringSearch
+        NavFilteringSearch
     },
     mounted() {
     }

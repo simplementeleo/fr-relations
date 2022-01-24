@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,6 +13,9 @@ h2 {
 }
 .absolute-full {
     @apply absolute left-0 top-0 w-full h-full;
+}
+.fixed-full {
+    @apply fixed left-0 top-0 w-full h-full;
 }
 .bg-basecolor {
     background: #fa5655;
@@ -59,8 +66,108 @@ h2 {
     filter: invert(100%);
 }
 
+.slider-red {
+    --slider-connect-bg: #EF4444;
+    --slider-tooltip-bg: #EF4444;
+    --slider-handle-ring-color: #EF444430;
+    --slider-handle-shadow: none;
+    --slider-tooltip-arrow-size: 0px;
+    --slider-tooltip-font-size: 1.08rem;
+    --slider-tooltip-font-weight: 300;
+    --slider-tooltip-min-width: 44px;
+    --slider-tooltip-py: 3px;
+  }
+
+.label-min-max-slide {
+   @apply w-full max-w-6xl mt-10 md:mt-6 mr-5 ml-0 md:ml-8 text-gray-800
+}
+.label-normal {
+   @apply w-full max-w-6xl mr-5 ml-0 md:ml-8 text-gray-800
+}
+
 
 /* Responsive */
 .card-people-responsive {
     @apply relative opacity-0 h-96 sm:h-60 md:h-52 lg:h-48 xl:h-56 2xl:h-60 3xl:h-96;
+}
+.item-slide-menu {
+    @apply flex flex-col items-start justify-center md:flex-row md:items-center md:justify-between py-3;
+}
+.item-normal-menu {
+    @apply flex flex-col items-start justify-center md:flex-row md:items-start md:justify-between py-3;
+}
+
+
+/* All */
+.item-checkbox {
+    display: flex;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 11px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    align-items: center;
+}
+
+/* Hide the browser's default checkbox */
+.item-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    transition: all .2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* On mouse-over, add a grey background color */
+.item-checkbox:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.item-checkbox input:checked~.checkmark {
+    background-color: #ef4444;
+    border-color: red;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "\2713";
+    position: absolute;
+    display: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Show the checkmark when checked */
+.item-checkbox input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Multiple Gloobal8 */
+.multiple-glooball8 {
+    --ms-tag-bg: #ef4444;
+    --ms-tag-radius: 15px;
+}
+
+.mt-screen {
+    margin-top: 100vh;
 }
