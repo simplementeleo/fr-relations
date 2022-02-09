@@ -29,7 +29,7 @@
            <histories></histories>
            <service-one :three="true"></service-one>
            <service-one :white="true" :four="true"></service-one>
-           <!-- <review></review> -->
+           <review></review>
 
         </div>
     </div>
