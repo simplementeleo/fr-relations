@@ -1,6 +1,6 @@
 <template>
     <div class="bg-white py-12">
-        <h1 class="text-4xl text-center text-basecolor font-bold">Revue</h1>
+        <h1 class="text-4xl text-center text-red-500 font-bold">Revue</h1>
         <div class="container mx-auto px-20 mt-10">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
                 <div v-for="i in 3" v-bind:key="i" class="card p-5 rounded-lg bg-white pb-10">
